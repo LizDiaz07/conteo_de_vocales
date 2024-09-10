@@ -19,11 +19,12 @@ function encontrarNumeroDeLetra(letra, nombre) {
 }
 function leerValorDeNombre() {
     const inputNombre = document.getElementById("nombre");
-    return inputNombre.value;
+    return inputNombre.value;  
 }
 
 function imprimirResultado(resultado) {
-    console.log(resultado);
+    const paragrahp = document.getElementById("vocales");
+    paragrahp.innerHTML = resultado;
 }
 
 function manejoDelEventoDeInputNombre(){
